@@ -1,0 +1,29 @@
+﻿@page
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2">User</div>
+        @*<div class="col-4"><input type="text" id="userInput" /></div>*@
+        <div class="form-group"><input class="form-control" name="Text" id="userInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-2">Message</div>
+        @*<div class="col-4"><input type="text" id="messageInput" /></div>*@
+        <div class="form-group"><input class="form-control" name="Text" id="messageInput" /></div>
+
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <ul id="messagesList" class="alert alert-info" style="display:block;"></ul>
+    <br />
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
